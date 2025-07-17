@@ -1,75 +1,112 @@
 
 
+# 🧮 Simple Calculator
 
-# CMS-tkinter Project Analysis
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
 
-The CMS-tkinter project is a **Course Management System** built using Python's tkinter library for the graphical user interface and JSON for data persistence. Here's a comprehensive breakdown of how it works:
+> 🎯 A clean, responsive web-based calculator built with vanilla HTML, CSS, and JavaScript
 
-## Core Functionalities
+## ✨ Features
 
-### Student Management
-The system provides complete student lifecycle management with the following core functions:
+- 🔢 **Basic Arithmetic Operations**: Addition, subtraction, multiplication, and division
+- 🧹 **Clear Function**: Reset calculator with 'C' button
+- 💾 **Memory Functions**: M+ and M- buttons (currently in development)
+- 📱 **Responsive Design**: Works seamlessly across different devices
+- 🎨 **Clean UI**: Intuitive button layout with modern styling
+- ⚡ **Real-time Calculation**: Instant results with the equals button
 
-- **Add Student**: Creates new student records with ID, name, and semester information 
-- **Delete Student**: Removes student records from the system 
-- **View Students**: Displays all registered students with their basic information  
+## 🏗️ Project Structure
 
-### Course Registration System
-The system implements a sophisticated course management system with business rules:
+```
+Simple-Calculator-2/
+├── index.html      # Main HTML structure
+├── script.js       # Calculator logic and functionality
+├── style.css       # Main styling (referenced but not included)
+├── utils.css       # Utility classes (referenced but not included)
+└── README.md       # Project documentation
+```
 
-- **Course Registration**: Allows students to register for courses with type validation (DC/DE) 
-- **Course Limits**: Enforces business rules limiting students to maximum 4 DC courses and 2 DE courses  
-- **Course Dropping**: Enables students to drop registered courses 
-- **Course Viewing**: Displays all courses a specific student is registered for  
+## 🚀 Getting Started
 
-### Data Validation
-The system includes comprehensive validation mechanisms:
-- Duplicate student ID prevention 
-- Course type validation ensuring only "DC" or "DE" types are accepted 
-- Duplicate course registration prevention 
+### Prerequisites
+- 🌐 A modern web browser (Chrome, Firefox, Safari, Edge)
+- No additional dependencies required!
 
-## User Interface Components
+### Installation
 
-### Layout Structure
-The GUI uses a **grid-based layout** with organized sections:
-- **LabelFrame containers** for grouping related functionality 
-- **Fixed window size** to maintain consistent layout 
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/adityasahu1109/Simple-Calculator-2.git
+   ```
 
-### Interactive Sections
-The interface is organized into six main functional areas:
+2. **Navigate to the project directory**
+   ```bash
+   cd Simple-Calculator-2
+   ```
 
-1. **Add Student Section**: Input fields for student ID, name, and semester 
-2. **Register Course Section**: Fields for student ID, course ID, and course type 
-3. **Drop Course Section**: Interface for removing course registrations  
-4. **Delete Student Section**: Simple interface for student removal 
-5. **View Students Section**: Button to display all students  
-6. **View Courses Section**: Interface to view courses for a specific student 
+3. **Open the calculator**
+   - Simply open `index.html` in your web browser
+   - Or use a live server for development
 
-### User Feedback System
-The application uses **messagebox dialogs** to provide immediate feedback for all user actions 
-## Data Persistence Mechanisms
+## 💻 Usage
 
-### Storage Architecture
-The system uses a **dual-layer data architecture**:
-- **Runtime Storage**: Global dictionary (`students`) for in-memory operations 
-- **Persistent Storage**: JSON file (`students.json`) for permanent data storage 
+1. **Basic Operations**: Click number buttons to input values [1](#0-0) 
+2. **Mathematical Operations**: Use +, -, *, / for calculations [2](#0-1) 
+3. **Get Results**: Press '=' to evaluate your expression [3](#0-2) 
+4. **Clear**: Press 'C' to reset the calculator [4](#0-3) 
+5. **Decimal Support**: Use '.' for decimal calculations [5](#0-4) 
 
-### Data Operations
-- **Load Operation**: Reads existing data from JSON file at application startup 
-- **Save Operation**: Writes current state to JSON file after every data modification  
-- **Automatic Persistence**: Every CRUD operation automatically triggers data saving 
+## 🔧 Technical Implementation
 
-### Data Structure
-The JSON storage follows a hierarchical structure where each student record contains:
-- Basic information (ID, name, semester)
-- Nested courses object mapping course IDs to course types 
+### Core Functionality
+The calculator uses event listeners to handle button clicks and JavaScript's `eval()` function for mathematical computations [6](#0-5) . 
 
-### Application Lifecycle
-The main application flow follows this pattern:
-1. **Data Loading**: Application starts by loading existing data 
-2. **GUI Creation**: Main window with all interface components is created  
-3. **Event Loop**: Tkinter mainloop handles user interactions  
+### Button Layout
+The interface features a grid-based button layout with:
+- **Memory functions**: M+, M- (planned feature) [7](#0-6) 
+- **Number pad**: 0-9 with standard calculator arrangement [1](#0-0) 
+- **Operations**: Basic arithmetic operators (+, -, *, /) [2](#0-1) 
+- **Utility**: Clear (C), Percentage (%), and Equals (=) [8](#0-7) 
 
-## Notes
+## 🛠️ Development Status
 
-The CMS-tkinter project is a well-structured educational management application that demonstrates good separation of concerns between data management, business logic, and user interface. The system enforces academic constraints (course limits) while providing a user-friendly interface for managing student-course relationships. The JSON-based persistence ensures data survives application restarts, making it suitable for real-world educational institution use cases at a small to medium scale.
+### ✅ Completed Features
+- Basic arithmetic operations
+- Clear functionality
+- Number input and display
+- Equals calculation
+
+### 🚧 In Progress
+- Memory functions (M+, M-) implementation [9](#0-8) 
+- CSS styling (files referenced but not present)
+
+## 🤝 Contributing
+
+Contributions are welcome! Here are some ways you can help:
+
+1. **Implement Memory Functions**: Complete the M+ and M- functionality
+2. **Add CSS Styling**: Create the missing `style.css` and `utils.css` files
+3. **Enhanced Features**: Add scientific calculator functions
+4. **Bug Fixes**: Report and fix any calculation errors
+5. **UI/UX Improvements**: Enhance the visual design
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+**Aditya Sahu** - [@adityasahu1109](https://github.com/adityasahu1109)
+
+## 🙏 Acknowledgments
+
+- Built with vanilla JavaScript for simplicity and performance
+- Inspired by classic calculator designs
+- Thanks to the open-source community for continuous inspiration
+
+---
+
+⭐ **Star this repository if you found it helpful!**
